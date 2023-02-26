@@ -1,6 +1,11 @@
-Arrays and strings are data structures used in computer programming to store and manipulate collections of data.
+Arrays and strings are data structures used in computer programming to store and manipulate collections
+ of data.
 
-An array is a collection of data elements of the same type, stored contiguously in memory. Each element in an array is identified by an index, which is an integer value that represents its position in the array. The index starts at 0 and ends at the length of the array minus one. Arrays are commonly used for tasks such as storing lists of numbers or objects, and for implementing data structures like stacks and queues.
+An array is a collection of data elements of the same type, stored contiguously in memory. Each element 
+in an array is identified by an index, which is an integer value that represents its position in the 
+array. The index starts at 0 and ends at the length of the array minus one. Arrays are commonly used for
+tasks such as storing lists of numbers or objects, and for implementing data structures like stacks and 
+queues.
 
 // Declare an array of integers with a length of 5
 int myArray[5];
@@ -21,7 +26,11 @@ int thirdElement = myArray[2];
 
 
 
-A string is a sequence of characters, usually represented as an array of characters. In programming languages, strings are often enclosed in quotation marks to distinguish them from other types of data. Strings can be manipulated in many ways, such as by concatenating them together, searching for substrings within them, and splitting them into smaller pieces. Strings are used extensively in text processing and user interface programming.
+A string is a sequence of characters, usually represented as an array of characters. In programming 
+languages, strings are often enclosed in quotation marks to distinguish them from other types of data. 
+Strings can be manipulated in many ways, such as by concatenating them together, searching for substrings 
+within them, and splitting them into smaller pieces. Strings are used extensively in text processing and 
+user interface programming.
 
 // Declare a string variable
 string myString;
