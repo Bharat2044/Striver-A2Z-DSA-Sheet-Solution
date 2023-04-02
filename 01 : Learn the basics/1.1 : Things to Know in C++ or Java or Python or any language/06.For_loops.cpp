@@ -1,5 +1,10 @@
 // Link : https://practice.geeksforgeeks.org/problems/for-loop-primecheck-java/1
 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// Time Complexity = O(sqrt(N)), Space Complexity = O(1)
 void isPrime(int n) {
     for (int i = 2; i <= sqrt(n); i++) {
         // code here
@@ -16,5 +21,15 @@ void isPrime(int n) {
     cout << endl;
 }
 
-// Time Complexity = O(sqrt(n))
-// Space Complexity = O(1)
+//{ Driver Code Starts.
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        isPrime(n);
+    }
+    return 0;
+}
+// } Driver Code Ends
