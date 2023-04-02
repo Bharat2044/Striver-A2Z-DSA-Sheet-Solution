@@ -1,11 +1,19 @@
 // Link - gfg : https://practice.geeksforgeeks.org/problems/palindrome0746/1
 
-class Solution {
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solutionn {
 	public:
+
+        // Time Complexity = O(logx), Space Complexity = O(1)
 		string is_palindrome(int n) {
 		    // Code here.
 		    int rev = 0;
 		    int x = n;
+		    
 		    while (x != 0) {
 		        int d = x%10;
 		        rev = rev*10 + d;
@@ -15,8 +23,23 @@ class Solution {
 		    return (rev == n) ? "Yes" : "No";
 		}
 };
-// Time Complexity = O(logx)
-// Space Complexity = O(1)
+
+//{ Driver Code Starts.
+int main(){
+    int T;
+    cin >> T;
+    while(T--)
+    {
+    	int n;
+    	cin >> n;
+    	Solution ob;
+    	string ans = ob.is_palindrome(n);
+    	cout << ans <<"\n";
+    }
+	return 0;
+}
+
+// } Driver Code Ends
 
 
 // Link - Leetcode : https://leetcode.com/problems/palindrome-number/
