@@ -1,9 +1,15 @@
 // Link : https://practice.geeksforgeeks.org/problems/lcm-and-gcd4516/1
 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
   public:
+
     vector<long long> lcmAndGcd(long long a , long long b) {
-        // Approach - 1  ==> Using predefined method    =>  Time Complexity = O(log(min(a, b))), Space Complexity = O(1)
+        // Approach - 1  ==> Using predefined method
         /*vector<long long> v;
         long long x= __gcd(a,b);
         long long y= (a*b)/x;
@@ -11,7 +17,7 @@ class Solution {
         v.push_back(x);
         return v;*/
         
-        // Approach - 2  ==> Using Naive Solution    =>  Time Complexity = O(min(a, b)), Space Complexity = O(1)
+        // Approach - 2  ==> Using Naive Solution
         /*vector<long long> v;
         long long x = 1;
         for(int i=min(a,b); i>=1; i--) {
@@ -25,7 +31,7 @@ class Solution {
         v.push_back(x);
         return v;*/
         
-        // Approach - 3  ==> Using Euclidean’s Algorithm    =>  Time Complexity = O(min(a, b)), Space Complexity = O(1)
+        // Approach - 3  ==> Using Euclidean’s Algorithm
         /*vector<long long> v;
         long long m = a;
         long long n = b;
@@ -41,7 +47,7 @@ class Solution {
         v.push_back(x);
         return v;*/
         
-        // Approach - 4  ==> Using Optimized Euclidean’s Algorithm    =>  Time Complexity = O(log(min(a, b))), Space Complexity = O(1)
+        // Approach - 4  ==> Using Optimized Euclidean’s Algorithm
         vector<long long> v;
         long long m = a;
         long long n = b;
@@ -56,3 +62,23 @@ class Solution {
         v.push_back(x);
         return v;
     }
+};
+
+//{ Driver Code Starts.
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        long long A,B;
+        
+        cin>>A>>B;
+
+        Solution ob;
+        vector<long long> ans = ob.lcmAndGcd(A,B);
+        cout<<ans[0]<<" "<<ans[1]<<endl;
+    }
+
+    return 0;
+}
+// } Driver Code Ends
