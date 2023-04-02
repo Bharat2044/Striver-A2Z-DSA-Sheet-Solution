@@ -1,34 +1,60 @@
 // Link - gfg : https://practice.geeksforgeeks.org/problems/armstrong-numbers2727/1
 
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
   public:
+
+    // Time Complexity = O(logn), Space Complexity = O(1)
     string armstrongNumber(int n){
-        int temp = n;
-        int x = n;
-        int count = 0;
-        int sum = 0;
+        // code here
+        // int t=n;
+        // int x=n;
+        // int count=0;
+        // while(t!=0){
+        //     count++;
+        //     t/=10;
+        // }
+        // int sum=0;
+        // while(n!=0){
+        //     int d=n%10;
+        //     int power=pow(d,count);
+        //     sum += power;
+        // }
+        // return sum==x?"Yes":"No";
         
-        // count number of digits
-        while(temp != 0) {
-            count++;
-            temp /= 10;
+        int num = n;
+        int sum=0;
+        while(num>0){
+            int rem = num%10;
+            sum +=pow(rem,3);
+            num/=10;
         }
-        
-        // sum of all digits with power
-        while(x != 0) {
-            int d = x%10;
-            sum += pow(d, count);
-            x /= 10;
-        }
-        
-        if(n == sum)
+        if(sum==n)
             return "Yes";
-        else
+        else 
             return "No";
     }
 };
-// Time Complexity = O(n)
-// Space Complexity = O(1)
+
+//{ Driver Code Starts.
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        Solution ob;
+        cout << ob.armstrongNumber(n) << endl;
+    }
+    return 0;
+}
+
+// } Driver Code Ends
 
 
 
