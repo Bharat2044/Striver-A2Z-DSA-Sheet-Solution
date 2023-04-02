@@ -5,12 +5,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-// Time Complexity : O(N), Space Complexity : O(N)
 class Solution{
     public:
     //Complete this function
 
+    // Time Complexity : O(N), Space Complexity : O(N)
     void printNos(int N) {
         //Your code here
         if(N==0)
@@ -39,6 +38,7 @@ int main() {
         ob.printNos(N);
         cout << "\n";
     }
+
     return 0;
 }
 
