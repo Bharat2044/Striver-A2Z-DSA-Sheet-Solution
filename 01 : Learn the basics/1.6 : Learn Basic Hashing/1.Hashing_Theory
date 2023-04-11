@@ -1,0 +1,14 @@
+Hashing Theory : Hashing is a technique for storing and retrieving data in a table structure using a hash function.
+It is used to map large datasets into key-value pairs for faster access to elements. 
+The efficiency of mapping depends on the efficiency of the hash function used. 
+Hashing allows lookups, updating and retrieval operation to occur in a constant time i.e. O(1).
+
+In DSA, hashing is used to implement hash tables which are used for efficient searching and sorting of data. 
+A hash table is a data structure that uses a hash function to map keys to their associated values3. 
+The hash function takes an input (or key) and returns an index (or hash) into an array where the corresponding value can be found.
+
+
+Applications of Hashing: 
+(i) Hashing has many applications in cybersecurity such as message integrity, password validation, file integrity, and blockchain. 
+(ii) It is also used in data structures such as hash tables for efficient searching and sorting of data.
+(iii) Other applications of hashing include compiler operation, Rabin-Karp algorithm, linking file name and path together, game boards, graphics.
