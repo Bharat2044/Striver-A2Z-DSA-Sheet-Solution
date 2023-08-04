@@ -1,8 +1,5 @@
-// Link - codestudio : https://www.codingninjas.com/codestudio/problems/print-all-divisors-of-a-number_1164188
-
-
+// Question Link - codestudio : https://www.codingninjas.com/codestudio/problems/print-all-divisors-of-a-number_1164188
 #include <bits/stdc++.h> 
-#include <iostream>
 using namespace std;
 
 // Approach - 1 : Time Complexity = O(n), Space Complexity = O(1)
