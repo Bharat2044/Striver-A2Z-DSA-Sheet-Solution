@@ -1,7 +1,17 @@
-// Link : https://practice.geeksforgeeks.org/problems/lcm-and-gcd4516/1
+// Question Link : https://www.codingninjas.com/studio/problems/hcf-and-lcm_840448?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+int calcGCD(int n, int m){
+    // Write your code here.
+    if(m==0) 
+        return n;
+
+    return calcGCD(m, n%m);
+}
 
 
 
+
+
+// Question Link : https://practice.geeksforgeeks.org/problems/lcm-and-gcd4516/1
 #include <bits/stdc++.h>
 using namespace std;
 
