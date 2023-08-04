@@ -1,5 +1,5 @@
 Arrays and strings are data structures used in computer programming to store and manipulate collections
- of data.
+of data.
 
 An array is a collection of data elements of the same type, stored contiguously in memory. Each element 
 in an array is identified by an index, which is an integer value that represents its position in the 
