@@ -1,7 +1,23 @@
-// Link : https://practice.geeksforgeeks.org/problems/count-digits5716/1
+// Question Link: https://www.codingninjas.com/studio/problems/count-digits_8416387?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+int countDigits(int n){
+	// Write your code here.	
+	int count = 0;
+	int x = n;
+
+	while(n > 0) {
+		if((n%10 != 0) && (x % (n%10) == 0))
+			count++;
+
+		n /= 10;
+	}
+
+	return count;
+}
 
 
 
+
+// Question Link : https://practice.geeksforgeeks.org/problems/count-digits5716/1
 #include<bits/stdc++.h> 
 using namespace std;
 
