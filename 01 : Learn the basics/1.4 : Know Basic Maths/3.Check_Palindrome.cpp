@@ -1,7 +1,56 @@
-// Link - gfg : https://practice.geeksforgeeks.org/problems/palindrome0746/1
+// Question Link: https://www.codingninjas.com/studio/problems/palindrome-number_624662?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+bool palindrome(int n) {
+    // Write your code here
+    int x = n;
+    int rev = 0;
+
+    while(n > 0) {
+        int d = n%10;
+        rev = rev*10+d;
+
+        n /= 10;
+    }
+
+    return rev == x;
+}
 
 
 
+
+
+// Question Link: https://leetcode.com/problems/palindrome-number/
+class Solution {
+public:
+    int reverse(int n) {
+        int rev = 0;
+        
+        while(n) {
+            int d = n%10;
+            
+            if(rev>INT_MAX/10 || rev<INT_MIN/10)
+                return 0;
+            
+            rev = (rev*10)+d;
+            n /= 10;
+        }
+        
+        return rev;
+    }
+    
+    bool isPalindrome(int x) {
+        if(x < 0)
+            return false;
+        
+        return (x == reverse(x));
+    }
+};
+
+
+
+
+
+
+// Question Link - gfg : https://practice.geeksforgeeks.org/problems/palindrome0746/1
 #include<bits/stdc++.h>
 using namespace std;
 
