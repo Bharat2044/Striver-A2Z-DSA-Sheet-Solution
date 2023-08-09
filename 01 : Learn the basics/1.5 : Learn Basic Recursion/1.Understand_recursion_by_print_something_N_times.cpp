@@ -1,21 +1,18 @@
 // Question Link: https://www.codingninjas.com/studio/problems/print-1-to-n_628290?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
-void solve(vector<int> &arr, int x) {
-    if(x == 1) {
-        arr.push_back(1);
+void solve(vector<int> &output, int x) {
+    if(x == 0) 
         return;
-    }
-    else {
-        solve(arr, x-1);
-        arr.push_back(x);
-    }    
+    
+    solve(output, x-1);
+    output.push_back(x);
 }
 
 vector<int> printNos(int x) {
     // Write Your Code Here
-    vector<int> arr;
-    solve(arr, x);
+    vector<int> output;
+    solve(output, x);
 
-    return arr;
+    return output;
 }
 
 
