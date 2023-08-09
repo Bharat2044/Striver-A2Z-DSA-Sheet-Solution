@@ -1,4 +1,5 @@
 // Question Link: https://www.codingninjas.com/studio/problems/print-1-to-n_628290?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+// Time Complexity = O(n), Space Complexity = O(n)
 void solve(vector<int> &output, int x) {
     if(x == 0) 
         return;
