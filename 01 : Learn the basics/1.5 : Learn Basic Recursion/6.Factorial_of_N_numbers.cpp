@@ -1,8 +1,7 @@
+
+
+
 // Question Link: https://practice.geeksforgeeks.org/problems/factorial5739/1
-
-
-
-
 #include<bits/stdc++.h> 
 using namespace std;
 
