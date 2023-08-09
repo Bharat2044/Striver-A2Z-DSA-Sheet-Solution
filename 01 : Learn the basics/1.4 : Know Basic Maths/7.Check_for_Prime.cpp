@@ -14,9 +14,6 @@ bool isPrime(int n) {
 
 
 
-
-
-
 // Question Link - gfg : https://practice.geeksforgeeks.org/problems/prime-number2314/1
 class Solution{
 public:
